@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+
+    <style>
+        .form-control{
+    display: block;
+    width:100%;
+    font-size: 1rem;
+    font-weight: 550;
+    line-height:1.5;
+    border-color: red !important;
+    border-style: solid !important;
+    border-width: 0 0 1px 0 !important;
+    padding: 0px !important;
+    color:#495057;
+    height: auto;
+    border-radius: 0;
+    background-color: #fff;
+    background-clip: padding-box;
+    font-family: 'Courier New', monospace;
+        }
+*{
+    box-sizing: border-box;
+}
+
+.form-control:focus{
+
+    color: #495057;
+    background-color: #fff;
+    border-color: #fff;
+    outline: 0;
+    box-shadow: none;
+}
+.btn-class{
+    border-color: #00ac96;
+    color: #00ac96;
+}
+.btn-class:hover{
+    background-color: red;
+    color: #fff;
+}
+.birthday-section{
+    padding: 15px;
+}
+.div1{
+    
+    margin-left: 400px;
+    margin-top: 90px;
+    margin-right: 300px;
+    margin-bottom: 300px;
+    font-family: 'Courier New', monospace;
+    background-color: transparent;
+    backdrop-filter: blur(8%);
+     }
+    /* .div2{
+        background-color: #fff;
+        filter: blur(10px);
+     }*/
+   .mylogo{
+    margin-left: 90px;
+    margin-bottom: 20px;
+   }
+   .read_more {
+     font-size: 17px;
+     background-color: #121212;
+     color: white;
+     padding: 8px 0px;
+     width: 100%;
+     max-width: 144px;
+     text-align: center;
+     display: inline-block;
+     transition: ease-in all 0.5s;
+     font-weight: 500;
+     border-radius: 30px;
+     margin-left: 200px;
+}
+
+.read_more:hover {
+     background: #fe0000;
+     color: #fff;
+     transition: ease-in all 0.5s;
+}
+body{
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+
+    </style>
+</head>
+<body>
+  
+    <div class="div1">
+        <main class="cd__main">  
+            <div class="container">
+                <div class="row content">
+                    <div class="col-md-6 mb-3">
+                        <div class="col-md-6">
+                            <form action="Booking" method="post" >
+                                 
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <div class="mylogo">
+                                                <a href="index.html"><img src="ducati images/logo.png" width="80" height="85" alt="#" /></a><font size="6" face="Times">Booking Details</font>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    
+        <tr>
+            <td>
+                <div class="form-group">
+                    <label for="name" style="font-size:x-large; font-family:'Times New Roman', Times, serif;">Name</label>
+                    <input type="text" name="name" size="50" class="form-control"><br>
+                  </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="form-group">
+                    <label for="mail" style="font-size:x-large; font-family:'Times New Roman', Times, serif;">Email</label>
+                    <input type="email" name="mail" class="form-control"><br>
+                  </div>
+            </td>
+        <tr>
+            <td>
+                <div class="form-group">
+                    <label for="phone" style="font-size:x-large; font-family:'Times New Roman', Times, serif;">Phone</label>
+                    <input type="text" name="phone" class="form-control"> <br>
+                  </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="form-group">
+                    <label for="altphone" style="font-size:x-large; font-family:'Times New Roman', Times, serif;">Alternate Phone</label>
+                    <input type="text" name="altphone" class="form-control"> <br>
+                  </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="form-group" >
+                    <label for="" style="font-size:x-large; font-family:'Times New Roman', Times, serif;">Model: </label><br><br>
+                    <select name="model" id="model" style="padding: 8px; font-size: medium;"  class="form-control"> 
+                        <option value="">Select</option>
+                        <option value="Scrambler Icon">Scrambler Icon</option>
+                        <option value="Scrambler full throttle">Scrambler full throttle</option>
+                        <option value="Panigale">Panigale</option>
+                        <option value="Multistrada V4">Multistrada V4</option>
+                        <option value="Streetfighter V4">Streetfighter V4</option>
+                        <option value="Monster SP">Monster SP</option>
+                        <option value="Hypermotard 950">Hypermotard 950</option>
+                    </select> <br>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="form-group">
+                    <label for="date" style="font-size:x-large; font-family:'Times New Roman', Times, serif;">Delivery Date</label> <br><br>
+                    <input type="date" name="date" class="form-control"> <br>
+                  </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>
+					<input type="submit" class="read_more"> 
+                     <!--<button type="submit" class="read_more">BOOK</button>-->
+                </div>
+            </td>
+        </tr>
+    </table>
+
+ </form>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</body>
+</html>
